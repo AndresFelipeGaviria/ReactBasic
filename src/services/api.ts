@@ -2,7 +2,7 @@ import axios from 'axios';
 import  {useLoadingStore}  from '../store/loadingStore';
 
 const api = axios.create({
-  baseURL: "https://hotelmanagement20250304171928.azurewebsites.net/api",
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 api.interceptors.request.use((config) => {

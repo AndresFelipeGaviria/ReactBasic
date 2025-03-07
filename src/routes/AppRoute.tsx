@@ -21,17 +21,15 @@ const AppRouter = () => {
       <LogoutButton />
       <Suspense fallback={<div>Cargando...</div>}>
         <Routes>
-
           <Route path="/" element={<HotelSearch />} />
-
           <Route
-            path="/home"
-            element={
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
-            }
-          />
+                path="/home"
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
            <Route
             path="/hotels"
             element={
