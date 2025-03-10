@@ -14,7 +14,7 @@ export const createHotel = async (hotel: Omit<Hotel, 'hotelId' | 'rooms'>): Prom
 
 export const updatedHotelId = async (hotelId: string, hotel: UpdateHotel): Promise<any> => {
     try {
-      const  data  = await api.patch(API_SERVICES.HOTELS.UPDATE_HOTEL(hotelId),  hotel );
+      const  data  = await api.put(API_SERVICES.HOTELS.UPDATE_HOTEL(hotelId),  hotel );
       return data.data ;
     } catch (error) {
       throw error;

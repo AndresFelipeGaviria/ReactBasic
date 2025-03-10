@@ -33,14 +33,14 @@ const HotelCard = ({
         >
           Editar
         </button>
-        <button
+        {/* <button
           onClick={onToggleStatus}
           className={`${
             hotel.isActive ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600'
           } text-white px-3 py-1 rounded-lg transition duration-200`}
         >
           {hotel.isActive ? 'Deshabilitar' : 'Habilitar'}
-        </button>
+        </button> */}
         <button
           onClick={onAddRoom}
           className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg transition duration-200"
